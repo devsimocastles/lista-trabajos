@@ -1,0 +1,104 @@
+@import url(main.css);
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .banner{
+        height: 200px;
+        background-image: url("./images/bg-header-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--DesaturatedDarkCyan);
+    }
+
+
+    #jobs-container{
+        padding-top: 5em;
+        background-color: var(--LightGrayishCyanBackground);
+ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .job-card.new{
+            border-left: 7px solid var(--DesaturatedDarkCyan);
+        }
+
+        .job-card{
+            margin: 2em 0;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0px 0px 15px var(--DarkGrayishCyan);
+            border-radius: 5px;
+            min-height: 300px;
+            padding-left: 1em;
+            background-color: #fff;
+            .job-pic{
+                height: 51px;
+                img{
+                    width: 70px;
+                    height: auto;
+                    position: relative;
+                    bottom: 40px;
+                }
+            }
+        }
+
+        .job-name{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+            h3 {color: var(--DesaturatedDarkCyan);
+            margin-right: 2em;}
+            .new, .featured {
+                padding: 0.5em;
+              
+                border-radius: 25px;
+        
+                font-weight: bold;
+            }
+
+            .new{
+                background-color: var(--DesaturatedDarkCyan);
+                color: var(--LightGrayishCyanBackground);
+                margin-right: 1em;
+            }
+
+            .featured{
+                color: var(--LightGrayishCyanBackground);
+                background-color: var(--VeryDarkGrayishCyan);
+            }
+        }
+
+        .job-position{
+            h2{color: var(--VeryDarkGrayishCyan)}
+            margin-bottom: 1em;   
+        }
+
+        .job-features{
+            color: var(--DarkGrayishCyan);
+            font-size: 20px;
+            border-bottom: 1px solid var(--DesaturatedDarkCyan);
+            padding-bottom: 1em;
+            margin-right: 1em;
+        }
+
+        .tags-container{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            span { 
+                padding: 1em 0.5em;
+                margin: 1em;
+                background-color: var(--LightGrayishCyanBackground);
+                color: var(--DesaturatedDarkCyan);
+                font-weight: 700;
+            }
+        }
+        
+        
+    }

@@ -1,0 +1,60 @@
+@import url("main.css");
+
+@media screen and (min-width:1184px) {
+    .banner{
+        background-image: url("./images/bg-header-desktop.svg");
+        background-size: 100% cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #jobs-container{
+        .slicer{
+            display: flex;
+        }
+        .job-card{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2em;
+            height: 100px;
+            min-height: 180px;
+            max-width: 950px;
+        }
+        .job-pic{
+            height: max-content !important;
+            img{
+                width: 100px !important;
+                height: auto;
+                position: static !important;
+            }
+        }
+        .job-name{
+            display: flex;
+        }
+        .job-features-wrapper{
+            margin: 0 2em;
+        }
+        .job-features{
+            padding: 0;
+            border: none;
+            
+        }
+
+        .tags-container{
+            width: max-content !important;
+            flex-wrap: nowrap;
+
+        }
+    }
+
+    .filters-wrapper{
+        margin: 0 auto;
+        max-width: 950px;
+        .filter_span{
+            font-size: 20px;
+            flex-grow: 0 !important;
+            flex-basis: content !important;
+        }
+    }
+}
